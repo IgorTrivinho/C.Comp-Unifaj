@@ -2,6 +2,8 @@
 #include <locale.h>
 #include <math.h>
 
+#define PI 3.14159265359
+
 int main(){
 	
 	setlocale(LC_ALL, "Portuguese");
@@ -29,8 +31,10 @@ int main(){
 	printf("D. A raiz quadrada da soma dos quadrados: \n");
 	printf("v( %.2f² + %.2f² ) = %.2f\n\n", num1, num2, sqrt((num1*num1)+(num2*num2)));
 	
+	float anguloGraus = num1-num2;
+	float anguloRad   = anguloGraus * (PI/180);
 	printf("E. O seno da diferença do primeiro número pelo segundo\n");
-	printf("seno(%.2f - %.2f) = %.2f\n\n", num1, num2, sin(num1-num2));
+	printf("seno(%.2f - %.2f) = %.2f\n\n", num1, num2, sin(anguloRad));
 	
 	float modulo = num1;
 	if(num1 < 0.0){
