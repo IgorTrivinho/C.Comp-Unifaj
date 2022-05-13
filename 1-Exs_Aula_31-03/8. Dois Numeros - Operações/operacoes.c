@@ -43,5 +43,6 @@ int main(){
 	
 	printf("F. O módulo do primeiro número é: ");
 	printf("%.2f\n\n", modulo);
-	
+
+	return 0;	
 }

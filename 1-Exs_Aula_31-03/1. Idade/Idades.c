@@ -74,4 +74,6 @@ int main(){
 	printf("Quantidade de Crianças: %d\n", criancas);
 	printf("Quantidade de Jovens: %d\n", jovens);
 	printf("Quantidade de Adultos: %d\n", adultos);
+	
+	return 0;
 }
